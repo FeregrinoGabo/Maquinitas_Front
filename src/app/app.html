@@ -1,26 +1,8 @@
 <main class="main">
-  <h2> Usuarios del sistema </h2>
 
-  <ul>
-    @for (usuario of usuariosList(); track usuario.id) {
-      <li>
-        <strong>Username: </strong> {{ usuario.username }} <br>
-        <strong>Nombre: </strong> {{ usuario.nombre }} {{ usuario.apellidoPaterno }} <br>
-        <strong>Rol: </strong> {{ usuario.rol }} <br>
-      </li>
-      <hr>
-    }
-  </ul>
+<app-usuario-component></app-usuario-component>
+<app-empresa-component></app-empresa-component>
 
-  <h2> Empresas del sistema </h2>
 
-  <ul>
-    @for (empresa of empresasList(); track empresa.id) {
-      <li>
-        <strong>Nombre: </strong> {{ empresa.nombre }} <br>
-      </li>
-      <hr>
-    }
-  </ul>
 
 </main>

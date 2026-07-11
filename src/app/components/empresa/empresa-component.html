@@ -1,0 +1,12 @@
+<div>
+    <h2>Empresas del sistema</h2>
+    
+    <ul>
+        @for (empresa of empresasList(); track empresa.id){
+            <li>
+                <strong>Nombre: </strong> {{ empresa.nombre }} <br>
+            </li>
+            <hr>
+        }
+    </ul>
+</div>

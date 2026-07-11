@@ -1,0 +1,14 @@
+<div>
+    <h2>Usuarios del sistema</h2>
+    
+    <ul>
+        @for (usuario of usuariosList(); track usuario.id){
+            <li>
+                <strong>Username: </strong> {{ usuario.username }} <br>
+                <strong>Nombre: </strong> {{ usuario.nombre }} {{ usuario.apellidoPaterno }} <br>
+                <strong>Rol: </strong> {{ usuario.rol }} <br>
+                <hr>
+            </li>
+        }
+    </ul>
+</div>
