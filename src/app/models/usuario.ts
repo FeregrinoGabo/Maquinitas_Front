@@ -1,0 +1,8 @@
+export interface Usuario{
+    id: number;
+    nombre: string;
+    apellidoPaterno: string;
+    apellidoMaterno: string;
+    username: string;
+    rol: string;
+}
