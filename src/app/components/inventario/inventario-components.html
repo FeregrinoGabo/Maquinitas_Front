@@ -1,1 +1,14 @@
-<p>inventario-components works!</p>
+<div>
+    <h2>Inventarios del sistema</h2>
+
+    <ul>
+        @for (inventario of inventarioList(); track inventario.id){
+            <li>
+                <strong>Nombre: </strong> {{ inventario.nombre }} <br>
+                <strong>Stock: </strong> {{ inventario.stock }} <br>
+                <strong>Costo promedio: </strong> {{inventario.costoPromedio}} <br>
+                <hr>
+            </li>
+        }
+    </ul>
+</div>
