@@ -1,1 +1,15 @@
-<p>maquina-components works!</p>
+<div>
+    <h2>Maquinas del sistema</h2>
+    <ul>
+    @for (maquina of maquinaList(); track maquina.id){
+        <li>
+            <strong>Id: </strong> {{maquina.id}} <br>
+            <strong>Color: </strong> {{maquina.color}} <br>
+            <strong>Capacidad: </strong> {{maquina.capacidad}} <br>
+            <strong>Estado: </strong> {{maquina.estado}} <br>
+            <strong>descripcion: </strong> {{maquina.descripcion}} <br>
+            <hr>
+        </li>
+    }
+    </ul>
+</div>

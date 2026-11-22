@@ -1,1 +1,19 @@
-<p>tienda-components works!</p>
+<div>
+    <h2>Tiendas del sistema</h2>
+
+    <ul>
+        @for (tienda of tiendaList(); track tienda.id){
+            <li>
+                <strong>Nombre: </strong> {{tienda.nombre}} <br>
+                <strong>Pais: </strong> {{tienda.pais}} <br>
+                <strong>Estado: </strong> {{tienda.estado}} <br>
+                <strong>Municipio: </strong> {{tienda.municipio}} <br>
+                <strong>Colonia: </strong> {{tienda.colonia}} <br>
+                <strong>Porcentaje base: </strong> {{tienda.porcentajeBase}} <br>
+                <strong>Fecha asignación: </strong> {{tienda.fechaCreacion}} <br>
+                <strong>Fecha retiro: </strong> {{tienda.fechaRetiro}} <br>
+                <hr>
+            </li>
+        }
+    </ul>
+</div>

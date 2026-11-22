@@ -1,1 +1,16 @@
-<p>asignacion-components works!</p>
+<div>
+    <h2>Asignaciones del sistema</h2>
+
+    <ul>
+        @for (asignacion of asignacionList(); track asignacion.id){
+            <li>
+                <strong>Fecha asignacion: </strong> {{asignacion.fechaAsignacion}} <br>
+                <strong>Fecha retiro: </strong> {{asignacion.fechaRetiro}} <br>
+                <strong>Nombre usuario: </strong> {{asignacion.nombreUsuario}} <br>
+                <strong>Nombre tienda: </strong> {{asignacion.nombreTienda}} <br>
+                <strong>Maquina id: </strong> {{asignacion.id}}
+                <hr>
+            </li>
+        }
+    </ul>
+</div>
