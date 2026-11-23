@@ -6,6 +6,8 @@ import { InventarioComponents } from './components/inventario/inventario-compone
 import { MaquinaComponents } from './components/maquina/maquina-components';
 import { TiendaComponents } from './components/tienda/tienda-components';
 import { AsignacionComponents } from './components/asignacion/asignacion-components';
+import { CorteComponents } from './components/corte/corte-components';
+import { EntradaComponents } from './components/entrada/entrada-components';
 
 
 @Component({
@@ -15,7 +17,9 @@ import { AsignacionComponents } from './components/asignacion/asignacion-compone
     InventarioComponents, 
     MaquinaComponents,
     TiendaComponents,
-    AsignacionComponents
+    AsignacionComponents,
+    CorteComponents,
+    EntradaComponents
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'

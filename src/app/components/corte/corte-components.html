@@ -1,1 +1,23 @@
-<p>corte-components works!</p>
+<div>
+    <h2>Cortes del sistema</h2>
+    <ul>
+        @for (corte of corteList(); track corte.id){
+            <li>
+                <strong>Dinero recolectado: </strong> {{corte.dineroRecolectado}} <br>
+                <strong>Fecha corte: </strong> {{corte.fechaCorte}} <br>
+                <strong>Peluches restantes: </strong> {{corte.peluchesRestantes}} <br>
+                <strong>Porcentaje pactado: </strong> {{corte.porcentajePactado}} <br>
+                <strong>Costo por peluche: </strong> {{corte.costoPorPeluche}} <br>
+                <strong>Recarga peluches: </strong> {{corte.recargaPeluches}} <br>
+                <strong>Id de usuario: </strong> {{corte.idUsuario}} <br>
+                <strong>Nombre de usuario: </strong> {{corte.nombreUsuario}} <br>
+                <strong>Username de usuario: </strong> {{corte.usernameUsuario}} <br>
+                <strong>Id de asignacion: </strong> {{corte.idAsignacion}} <br>
+                <strong>Id de maquina: </strong> {{corte.idMaquina}} <br>
+                <strong>Id de tienda: </strong> {{corte.idTienda}} <br>
+                <strong>Nombre tienda: </strong> {{corte.nombreTienda}} <br>
+                <hr>
+            </li>
+        }
+    </ul>
+</div>

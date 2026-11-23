@@ -1,1 +1,16 @@
-<p>entrada-components works!</p>
+<div>
+    <h2>Entradas del sistema</h2>
+
+    <ul>
+        @for (entrada of entradaList(); track entrada.id){
+            <li>
+                <strong>Cantidad: </strong> {{entrada.cantidad}} <br>
+                <strong>Costo: </strong> {{entrada.costo}} <br>
+                <strong>Descripción: </strong> {{entrada.descripcion}} <br>
+                <strong>Fecha llegada: </strong> {{entrada.fechaLlegada}} <br>
+                <strong>Id usuario: </strong> {{entrada.idEncargado}} <br>
+                <hr>
+            </li>
+        }
+    </ul>
+</div>
